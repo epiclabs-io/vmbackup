@@ -1,0 +1,24 @@
+#VMware backup default config
+
+#User that has privileges to shutdown / start a VM
+VMBACKUP_USER="vmbackup"
+VMBACKUP_PASSWORD="password" 
+
+#VMware host
+VMWARE_HOST="https://localhost" 
+#Where the shared VMs are stored
+VMWARE_SHAREDVM_PATH="/var/lib/vmware/Shared VMs" 
+#What folder use as staging area for compression
+BACKUP_TEMP_FOLDER="/tmp"
+#Where to store the logs
+VMBACKUP_LOG_FOLDER="/var/log/vmbackup"
+# Backup FTP connection information
+FTP_HOSTNAME="ftp.hostname.com"
+FTP_USER="user" 
+FTP_PASSWORD="password"
+FTP_REMOTE_FOLDER="/vmbackup"
+
+#default number of backups to hold per VM
+NUMBACKUPS=3 
+#How many days in between backups
+BACKUP_PERIOD=7
