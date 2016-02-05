@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# backs up a VMware VM
+# backs up VMware Workstation shared VMs.
 # This script scans the VMware Shared VMs folder looking
 # for a "vmbackup.conf" file inside. If found,
 # determines that the virtual machine has a backup plan according
@@ -15,7 +15,7 @@
 
 CONFIG_FILE="/etc/vmbackup.conf"
 AUTHOR="Javier Peletier <jm@epiclabs.io>"
-LICENSE="Released under GNU. All rights reserved. Epic Labs, S.L. 2016"
+LICENSE="Released under GPL. All rights reserved. Epic Labs, S.L. 2016 http://epiclabs.io"
 
 function log {
 
