@@ -15,7 +15,7 @@ To back up a machine, if it is running, the script stops it gracefully, copies i
 4. Add the script to crontab. For example, this line runs the backup every day at 4am:
 
 ```
-* 4 * * * vmbackup.sh
+0 4 * * * vmbackup.sh
 ```
 Although the script runs every day, it will check each VM's schedule to see if it has to actually execute the backup that day or not.
 
